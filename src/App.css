@@ -3,4 +3,19 @@
     margin-top: 20px;
     display: grid;
     place-items: center;
+    text-align: center;
 }
+.socials{
+    margin-top: 10px;
+}
+.first-page{
+    height: 100vh;
+  }
+.other-page{
+    
+  }
+  .about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
