@@ -5,7 +5,7 @@ import{FaSun, FaMoon} from 'react-icons/fa';
 const ThemeSwitcher = () => {
     const [isLightMode, setIsLightMode] = useState(false);
     const toggleTheme = () =>{
-        setIsLightMode(!isLightMode);
+        setIsLightMode(prevState=>!prevState);
         document.body.classList.toggle('light', !isLightMode)
     };
 

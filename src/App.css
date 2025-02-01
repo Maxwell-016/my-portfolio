@@ -12,10 +12,18 @@
     height: 100vh;
   }
 .other-page{
-    
+    display: grid;
+    place-items: center;
   }
   .about-me{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .services{
+    margin-top: 20px;
+  }
+  .service-cards{
+    display: flex;
+    justify-content: space-evenly;
   }
