@@ -14,6 +14,7 @@ import Title from './components/title';
 import AnimatedCard from './components/animatedCard';
 import AboutMeText from './components/aboutMEText';
 import ServiceCard from './components/serviceCard';
+import ContactForm from './components/contactForm'
 import './App.css';
 function App() {
   const altText = "My profile Photo"
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
     <div className='first-page'>
-      <NavBar/>
+      <NavBar id = "home"/>
       <div className='introduction'>
         <CircularAvatar imageUrl={profileImage} altText={altText}/>
         <IntroText title = {title} name = {name} continuation = {continuation}/>
@@ -59,7 +60,12 @@ function App() {
           <ServiceCard imageUrl={mobileDev} altText="Mobile development" description= {mobileDevDescription} title="App Development"/>
           <ServiceCard imageUrl={firebase} altText="backend development" description= {backendDevDescription} title="Back-end Development"/>
         </div>
-         </div>
+      </div>
+
+      <Title title = "Contact Me" id ="contact"/>
+      <div className = "contact">
+        <ContactForm/>
+      </div>
     </div>
     </>
   )

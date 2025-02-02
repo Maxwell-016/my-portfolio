@@ -1,0 +1,26 @@
+.textfield{
+    width: 90%;
+    min-height: 40px;
+    background-color: transparent;
+    border: 1px solid #526D82;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+}
+.textfield:focus{
+    border: 1px solid var(--text-color);
+    outline: none;
+}
+textarea{
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid #526D82;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+    font-family: 'Poppins' , serif;;
+}
+textarea:focus{
+    border: 1px solid var(--text-color);
+    outline: none;
+}

@@ -1,0 +1,43 @@
+form{
+    width: 40%;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+.buttons{
+    margin-top: 10px;
+    display: flex;
+}
+.submit{
+    background-color:  #526d82;
+}
+.submit:hover{
+    background-color: transparent;
+    border: 2px solid #526d82;
+}
+.reset{
+    background-color: transparent;
+    border: 2px solid #526d82;
+    margin-left: 50px;
+
+}
+.reset:hover{
+    background-color:  #526d82;
+}
+.contactUs{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contactText{
+    width:40%;
+    margin-right: 40px;
+}
+.contactText h2{
+    font-size: 40px;
+}
