@@ -7,14 +7,15 @@ import NavBar from './components/navBar'
 import CircularAvatar from './components/circularAvatar'
 import IntroText from './components/introText';
 import SimpleDescription from './components/simpleDesc';
-import IconButton from './components/iconButton';
-import {FaInstagram, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import Socials from './components/socials'
 import BouncingArrow from './components/bouncingArrow';
 import Title from './components/title';
 import AnimatedCard from './components/animatedCard';
 import AboutMeText from './components/aboutMEText';
 import ServiceCard from './components/serviceCard';
-import ContactForm from './components/contactForm'
+import ContactForm from './components/contactForm';
+import Footer from './components/footer';
+import ThemeSwitcher from './components/themeSwitcher'
 import './App.css';
 function App() {
   const altText = "My profile Photo"
@@ -27,20 +28,17 @@ function App() {
   const backendDevDescription = "I design and implement robust backend solutions using Firebase. From real-time databases to authentication and cloud functions, I ensure your app has a secure and scalable foundation to thrive."
   return (
     <>
-    <div className='first-page'>
-      <NavBar id = "home"/>
+    <div className='first-page'  id = "home">
+      <div className='top-navigation'>
+        <div></div>
+        <NavBar/>
+        <ThemeSwitcher/>
+      </div>
       <div className='introduction'>
         <CircularAvatar imageUrl={profileImage} altText={altText}/>
         <IntroText title = {title} name = {name} continuation = {continuation}/>
         <SimpleDescription description = {description}/>
-
-        <div className="socials">
-        {/* TODO: Add links to the social media accounts */}
-        <IconButton icon={FaLinkedin} onPressed={()=>{console.log("LinkedIn icon has been pressed")}}/>
-        <IconButton icon={FaGithub} onPressed={()=>{console.log("GitHub icon has been pressed")}}/>
-        <IconButton icon={FaInstagram} onPressed={()=>{console.log("Instagram icon has been pressed")}}/>
-        <IconButton icon={FaTwitter} onPressed={()=>{console.log("Twitter icon has been pressed")}}/>
-      </div>
+        <Socials/>
       <BouncingArrow/>
       </div>
     </div>
@@ -67,6 +65,7 @@ function App() {
         <ContactForm/>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

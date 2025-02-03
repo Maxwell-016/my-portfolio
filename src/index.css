@@ -6,6 +6,8 @@
 :root{
   --text-color-light: #212E40;
   --text-color-dark: rgba(255, 255, 255, 0.87);
+  --footer-color-light: rgba(184, 192, 194, 0.479);
+  --footer-color-dark: #131C26;
 }
 body {
   font-family: 'Poppins' , serif;
@@ -13,19 +15,19 @@ body {
   justify-content: center;
   background-color: #212E40;
   --text-color: var(--text-color-dark);
+  --footer-color: var(--footer-color-dark);
 }
 body.light{
   font-family: 'Poppins' , serif;
   background-color: rgba(255, 255, 255, 0.87);
-  --text-color : var(--text-color-light)
+  --text-color : var(--text-color-light);
+  --footer-color: var(--footer-color-light);
 }
 
 /* navigation Bar */
 
 .nav-bar{
   padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
 }
 .nav-bar ul{
   display: flex;
@@ -39,13 +41,8 @@ body.light{
   color: var(--text-color);
   text-decoration: none;
 }
-li a.active{
-padding: 7px;
-border: 1px solid #526D82;
-border-radius: 10px;
-}
 
-li a:hover:not(.active){
+li a:hover{
 border-radius: 10px; 
 padding: 7px;
 border: 1px solid #526D82;
@@ -53,6 +50,9 @@ border: 1px solid #526D82;
 }
 .theme-button{
   float: right;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
   margin-right: 20px;
   width: 50px;
   height: 50px;
