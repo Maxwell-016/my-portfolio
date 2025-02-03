@@ -1,7 +1,4 @@
-.top-navigation{
-  display: flex;
-  justify-content: space-between;
-}
+
 .introduction{
     margin-top: 20px;
     display: grid;
@@ -34,4 +31,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @media(max-width: 768px){
+   .service-cards{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+
   }

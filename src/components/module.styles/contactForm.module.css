@@ -41,3 +41,17 @@ button{
 .contactText h2{
     font-size: 40px;
 }
+@media(max-width: 768px){
+    .contactUs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactText{
+        text-align: center;
+        width:75%;
+    }
+    form{
+        margin-top: 20px;
+        width: 80%;
+    }
+}

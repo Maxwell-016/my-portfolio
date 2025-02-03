@@ -1,11 +1,16 @@
 .footer{
     margin-top: 50px;
     width: 100%;
-    height: 250px;
+    height: 35vh;
     background-color: var(--footer-color);
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media(max-width: 768px){
+    .footer{
+       height: 65vh; 
+    }
 }

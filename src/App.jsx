@@ -15,7 +15,8 @@ import AboutMeText from './components/aboutMEText';
 import ServiceCard from './components/serviceCard';
 import ContactForm from './components/contactForm';
 import Footer from './components/footer';
-import ThemeSwitcher from './components/themeSwitcher'
+import ThemeSwitcher from './components/themeSwitcher';
+import { FaBars } from "react-icons/fa";
 import './App.css';
 function App() {
   const altText = "My profile Photo"
@@ -29,6 +30,10 @@ function App() {
   return (
     <>
     <div className='first-page'  id = "home">
+    <input type="checkbox" name="sideNav" id="sideNav" />
+        <label htmlFor="sideNav" className="bars">
+            <FaBars></FaBars>
+        </label>
       <div className='top-navigation'>
         <div></div>
         <NavBar/>
