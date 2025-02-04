@@ -1,4 +1,4 @@
-import propTypes from 'prop-types'
+
 const IntroText = (props) => {
     return (
         <div className='intro-text'>

@@ -1,11 +1,16 @@
 import React from 'react'
 
-const AboutMeText = () => {
+const AboutMeText = (props) => {
+    const description = props.description;
+    const name = props.name;
+    const phone = props.phone;
+    const email = props.email;
+    const language = props.language;
+    const freelance = props.freelance;
   return (
     <div className='about-column'>
         <p className='about-title'>I Develop Systems that Work</p>
-        <p className='about-description'>Passionate about building responsive, user-friendly web and mobile apps.Experienced in React, Flutter, and Firebase for seamless user experiences.
-            Focused on writing clean, efficient code and continuous learning.Always exploring new tools and techniques to improve my skills.</p>
+        <p className='about-description'>{description}</p>
         <div className='personal-details'>
             <div>
                 <p>Name</p>
@@ -15,11 +20,11 @@ const AboutMeText = () => {
                 <p>Freelance</p>
             </div>
             <div>
-                <p>: Maxwell Ndungu</p>
-                <p>: +254 743 904 449</p>
-                <p>: ndungumaxwell057@gmail.com</p>
-                <p>: English, Swahili</p>
-                <p>: Available</p>
+                <p>: {name}</p>
+                <p>: {phone}</p>
+                <p>: {email}</p>
+                <p>: {language}</p>
+                <p>: {freelance}</p>
             </div>
         </div>
     </div>
