@@ -8,6 +8,8 @@
   --text-color-dark: rgba(255, 255, 255, 0.87);
   --footer-color-light: rgba(184, 192, 194, 0.479);
   --footer-color-dark: #131C26;
+  --dialog-color-light: rgb(226, 226, 226);
+  --dialog-color-dark: #131C26;
 }
 body {
   font-family: 'Poppins' , serif;
@@ -16,12 +18,14 @@ body {
   background-color: #212E40;
   --text-color: var(--text-color-dark);
   --footer-color: var(--footer-color-dark);
+  --dialog-color: var(--dialog-color-dark);
 }
 body.light{
   font-family: 'Poppins' , serif;
   background-color: rgba(255, 255, 255, 0.87);
   --text-color : var(--text-color-light);
   --footer-color: var(--footer-color-light);
+  --dialog-color: var(--dialog-color-light);
 }
 
 /* navigation Bar */

@@ -12,7 +12,7 @@ const LabelledTextField = (props) => {
         return(
             <div>
                 <p>{label}</p>
-                <textarea name={name} id={name} rows={3} placeholder={placeholder} required/>
+                <textarea onChange= {onChange} name={name} id={name} rows={3} placeholder={placeholder} required/>
             </div>
         );
     }
