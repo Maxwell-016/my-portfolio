@@ -16,15 +16,12 @@ import ServiceCard from "./components/serviceCard";
 import ContactForm from "./components/contactForm";
 import Footer from "./components/footer";
 import ThemeSwitcher from "./components/themeSwitcher";
-import DialogBox from "./components/dialogBox";
 import { FaBars} from "react-icons/fa";
 
 import { useContent } from "./hooks/useContent";
 import "./App.css";
 function App() {
   const {content, isLoading, error} = useContent();
-  console.log(content);
-  
 
   //Hero section
   const altText = "My profile Photo";
