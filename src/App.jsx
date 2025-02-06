@@ -15,6 +15,7 @@ import ServiceCard from "./components/serviceCard";
 import ContactForm from "./components/contactForm";
 import Footer from "./components/footer";
 import ThemeSwitcher from "./components/themeSwitcher";
+import Transition from "./components/transition";
 import { FaBars } from "react-icons/fa";
 
 import { useContent } from "./hooks/useContent";
@@ -32,26 +33,38 @@ function App() {
   const description = isLoading ? "Loading..." : content.hero?.description;
 
   //Socials
-  const linkedIn = content.socials?.linkedIn ??
+  const linkedIn =
+    // content.socials?.linkedIn ??
     "https://www.linkedin.com/in/maxwell-ndungu-016305258/";
-  const instagram = content.socials?.instagram ?? 
+  const instagram =
+    // content.socials?.instagram ?? 
     "https://www.instagram.com/_m.a.k.s.y_/";
-  const gitHub = content.socials?.github ?? 
-    "https://github.com/Maxwell-016";
-  const twitter = content.socials?.twitter ?? 
-    "https://x.com/maksyn440";
+  const gitHub = 
+  // content.socials?.github ?? 
+  "https://github.com/Maxwell-016";
+  const twitter = 
+  // content.socials?.twitter ?? 
+  "https://x.com/maksyn440";
 
   //About me section
-  const aboutMeDescription = isLoading? "Loading...": content.about?.description;
+  const aboutMeDescription = isLoading
+    ? "Loading..."
+    : content.about?.description;
   const phone = isLoading ? "Loading..." : content.about?.phone;
   const email = isLoading ? "Loading..." : content.about?.email;
   const language = isLoading ? "Loading..." : content.about?.language;
   const freelance = isLoading ? "Loading..." : content.about?.freelance;
 
   //Services section
-  const webDevDescription = isLoading? "Loading...": content.services?.webDevDescription;
-  const mobileDevDescription = isLoading? "Loading...": content.services?.mobileDevDescription;
-  const backendDevDescription = isLoading? "Loading...": content.services?.backendDevDescription;
+  const webDevDescription = isLoading
+    ? "Loading..."
+    : content.services?.webDevDescription;
+  const mobileDevDescription = isLoading
+    ? "Loading..."
+    : content.services?.mobileDevDescription;
+  const backendDevDescription = isLoading
+    ? "Loading..."
+    : content.services?.backendDevDescription;
 
   //Contact section
   const getInTouch = isLoading ? "Loading..." : content.contact?.getInTouch;
@@ -76,14 +89,15 @@ function App() {
 
         <div className="introduction">
           <CircularAvatar imageUrl={imageUrl} altText={altText} />
-          <IntroText title={title} name={name} continuation={continuation} />
-          <SimpleDescription description={description} />
-          <Socials
-            linkedIn={linkedIn}
-            gitHub={gitHub}
-            instagram={instagram}
-            twitter={twitter}
-          />
+
+            <IntroText title={title} name={name} continuation={continuation} />
+            <SimpleDescription description={description} />
+            <Socials
+              linkedIn={linkedIn}
+              gitHub={gitHub}
+              instagram={instagram}
+              twitter={twitter}
+            />
           <BouncingArrow />
         </div>
       </div>
