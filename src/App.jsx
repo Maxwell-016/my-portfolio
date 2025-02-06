@@ -15,7 +15,6 @@ import ServiceCard from "./components/serviceCard";
 import ContactForm from "./components/contactForm";
 import Footer from "./components/footer";
 import ThemeSwitcher from "./components/themeSwitcher";
-import Transition from "./components/transition";
 import { FaBars } from "react-icons/fa";
 
 import { useContent } from "./hooks/useContent";
