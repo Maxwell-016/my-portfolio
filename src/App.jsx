@@ -1,4 +1,4 @@
-import workingAnimation from "./assets/whatIdo.png";
+import workingAnimation from "./assets/whatIDo.png";
 import webDev from "./assets/webDev.png";
 import mobileDev from "./assets/appDev.png";
 import firebase from "./assets/firebase.png";
