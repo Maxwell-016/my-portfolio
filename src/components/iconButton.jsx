@@ -2,9 +2,10 @@ import propTypes from 'prop-types'
 import React from 'react'
 const IconButton = (props) => {
     const Icon = props.icon
+    const url = props.url
   return (
     <button onClick={props.onPressed} className='socials-icon-btn'>
-        <Icon className = "socials-icon"></Icon>
+        <a href={url} target='_blanck' ><Icon className = "socials-icon"></Icon></a>
     </button>
   )
 }

@@ -126,6 +126,9 @@ border: 1px solid #526D82;
   background-color: transparent;
   color: var(--text-color);
 }
+.socials-icon-btn a{
+  color: var(--text-color);
+}
 .socials-icon{
   width: 22px;
   height: 22px;
