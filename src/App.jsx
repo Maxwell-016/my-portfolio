@@ -144,7 +144,12 @@ function App() {
           <ContactForm getInTouch={getInTouch} />
         </div>
       </div>
-      <Footer />
+      <Footer
+        linkedIn={linkedIn}
+        gitHub={gitHub}
+        instagram={instagram}
+        twitter={twitter}
+       />
     </>
   );
 }
