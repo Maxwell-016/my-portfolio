@@ -45,7 +45,7 @@
 .cancelButton:hover{
     background-color:  #526d82;
 }
-@media(max-width: 768px){
+@media(max-width: 800px){
     .dialogContainer{
         width: 80%;
     }

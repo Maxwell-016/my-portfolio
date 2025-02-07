@@ -22,7 +22,7 @@ const AboutMeText = (props) => {
             <div>
                 <p>: {name}</p>
                 <p>: {phone}</p>
-                <p>: {email}</p>
+                <p>:{email}</p>
                 <p>: {language}</p>
                 <p>: {freelance}</p>
             </div>

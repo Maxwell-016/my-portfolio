@@ -34,11 +34,6 @@ const Notification = (props) => {
         <div className={style.title}>{title}</div>
         <div className={style.message}>{message}</div>
       </div>
-      {/* <div className={style.cancel}>
-          <button  onClick={handleCancel}  className={style.button}>
-            <FaTimes />
-          </button>
-        </div> */}
     </div>
   );
 };

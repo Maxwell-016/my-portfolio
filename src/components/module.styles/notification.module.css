@@ -52,7 +52,7 @@
 .button:hover{
     background-color: rgba(31, 16, 16, 0.514);
 } */
-@media(max-width: 768px){
+@media(max-width: 800px){
     .notificationContainer{
         width: 80%;
     }

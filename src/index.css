@@ -219,7 +219,7 @@ border: 1px solid #526D82;
 .small-screen-theme{
   display: none;
 }
-@media(max-width: 768px){
+@media(max-width: 800px){
   .first-page{
     display: flex;
     flex-direction: column;
