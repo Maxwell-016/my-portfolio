@@ -22,7 +22,7 @@ const DialogBox = (props) => {
           <div className={style.values}>
             <p> : {name}</p>
             <p> : {email}</p>
-            <p> : {message}</p>
+            <p className = {style.message}> : {message}</p>
           </div>
         </div>
         <hr />

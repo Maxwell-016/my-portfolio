@@ -36,14 +36,14 @@ function App() {
     // content.socials?.linkedIn ??
     "https://www.linkedin.com/in/maxwell-ndungu-016305258/";
   const instagram =
-    // content.socials?.instagram ?? 
+    // content.socials?.instagram ??
     "https://www.instagram.com/_m.a.k.s.y_/";
-  const gitHub = 
-  // content.socials?.github ?? 
-  "https://github.com/Maxwell-016";
-  const twitter = 
-  // content.socials?.twitter ?? 
-  "https://x.com/maksyn440";
+  const gitHub =
+    // content.socials?.github ??
+    "https://github.com/Maxwell-016";
+  const twitter =
+    // content.socials?.twitter ??
+    "https://x.com/maksyn440";
 
   //About me section
   const aboutMeDescription = isLoading
@@ -87,8 +87,10 @@ function App() {
         </div>
 
         <div className="introduction">
-          <CircularAvatar imageUrl={imageUrl} altText={altText} />
-
+          <div className="section">
+            <CircularAvatar imageUrl={imageUrl} altText={altText} />
+          </div>
+          <div className="section">
             <IntroText title={title} name={name} continuation={continuation} />
             <SimpleDescription description={description} />
             <Socials
@@ -97,51 +99,66 @@ function App() {
               instagram={instagram}
               twitter={twitter}
             />
+          </div>
           <BouncingArrow />
         </div>
       </div>
 
       <div className="other-page">
-        <Title title="About Me" id="about" />
-        <div className="about-me">
-          <AnimatedCard image={workingAnimation} altText="working animation" />
-          <AboutMeText
-            description={aboutMeDescription}
-            name={name}
-            phone={phone}
-            email={email}
-            language={language}
-            freelance={freelance}
-          />
-        </div>
-
-        <Title title="Services" id="services" />
-        <div className="services">
-          <div className="service-cards">
-            <ServiceCard
-              imageUrl={webDev}
-              altText="Web development"
-              description={webDevDescription}
-              title="Web Development"
+        <div className="section">
+          <Title title="About Me" id="about" />
+          <div className="about-me">
+            <AnimatedCard
+              image={workingAnimation}
+              altText="working animation"
             />
-            <ServiceCard
-              imageUrl={mobileDev}
-              altText="Mobile development"
-              description={mobileDevDescription}
-              title="App Development"
-            />
-            <ServiceCard
-              imageUrl={firebase}
-              altText="backend development"
-              description={backendDevDescription}
-              title="Back-end Development"
+            <AboutMeText
+              description={aboutMeDescription}
+              name={name}
+              phone={phone}
+              email={email}
+              language={language}
+              freelance={freelance}
             />
           </div>
         </div>
 
-        <Title title="Contact Me" id="contact" />
-        <div className="contact">
-          <ContactForm getInTouch={getInTouch} />
+        <div className="section">
+          <Title title="Services" id="services" />
+        </div>
+        <div className="services">
+          <div className="service-cards">
+        
+              <ServiceCard
+                imageUrl={webDev}
+                altText="Web development"
+                description={webDevDescription}
+                title="Web Development"
+              />
+          
+          
+              <ServiceCard
+                imageUrl={mobileDev}
+                altText="Mobile development"
+                description={mobileDevDescription}
+                title="App Development"
+              />
+            
+
+              <ServiceCard
+                imageUrl={firebase}
+                altText="backend development"
+                description={backendDevDescription}
+                title="Back-end Development"
+              />
+            
+          </div>
+        </div>
+        <div className="section">
+          <Title title="Contact Me" id="contact" />
+          <div className="contact">
+            <ContactForm getInTouch={getInTouch} />
+          </div>
         </div>
       </div>
       <Footer
@@ -149,7 +166,7 @@ function App() {
         gitHub={gitHub}
         instagram={instagram}
         twitter={twitter}
-       />
+      />
     </>
   );
 }

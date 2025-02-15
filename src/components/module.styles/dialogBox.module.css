@@ -24,6 +24,10 @@
 .values{
     padding: 10px;
 }
+.message{
+    display: flex;
+    flex-wrap: wrap;
+}
 .buttons{
     display: flex;
     padding: 10px;

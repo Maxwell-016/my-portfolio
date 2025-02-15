@@ -43,6 +43,7 @@ const ContactForm = (props) => {
         Message: message,
         DateAdded: dateAdded
       });
+
       setMessageSent(true);
       setShowDialog(false);
     }
