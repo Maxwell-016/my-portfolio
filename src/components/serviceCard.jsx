@@ -1,4 +1,4 @@
-import React from 'react'
+
 import propTypes from 'prop-types'
 import styles from './module.styles/serviceCard.module.css'
 

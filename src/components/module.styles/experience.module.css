@@ -1,0 +1,39 @@
+.experience_card {
+  color: var(--text-color);
+  border: 2px solid #526d82;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+.experience_card ul {
+  padding-left: 10px;
+}
+.experience_card ul li {
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+.experience_card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.center h4 {
+  color:  #7cccfb;
+}
+.experience_card:hover {
+  transform: translateY(-10px) rotateZ(-1.5deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
