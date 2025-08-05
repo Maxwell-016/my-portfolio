@@ -5,8 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  justify-content: space-between;
   border-radius: 10px;
+  gap: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform;
 }
@@ -34,6 +35,30 @@
   color:  #7cccfb;
 }
 .experience_card:hover {
-  transform: translateY(-10px) rotateZ(-1.5deg);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.visit{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #7cccfb;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  color: #060c11;
+}
+.visit a{
+  text-decoration: none;
+  color: #060c11;
+  font-weight:600;
+}
+@media (max-width: 800px) {
+  .experience_card {
+    width: 90%;
+  }
 }
