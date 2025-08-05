@@ -39,6 +39,7 @@ p{
 }
 @media(max-width: 800px){
    .serviceCard{
-    width: 90%;
+    width: 100%;
+ 
    } 
 }
