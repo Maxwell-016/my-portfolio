@@ -2,7 +2,7 @@
 import styles from "./module.styles/experience.module.css";
 import { FaArrowRight } from "react-icons/fa";
 
-const Experience = ({ img, title, place, roles }) => {
+const Experience = ({ img, title, place, roles, link }) => {
   const rolesList = Array.isArray(roles)
     ? roles
     : roles
@@ -22,7 +22,7 @@ const Experience = ({ img, title, place, roles }) => {
           return <li key={index}>{role}</li>;
         })}
       </ul>
-      <div className={styles.visit}>
+      <div className={styles.visit} onClick={() => window.open(link, "_blank")}>
         <a href="">visit site</a>
         <FaArrowRight />
       </div>

@@ -233,6 +233,7 @@ function App() {
                   place={place.place}
                   title={place.title}
                   roles={place.roles}
+                  link = {place.link}
                 />
               );
             })}
