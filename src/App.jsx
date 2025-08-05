@@ -252,6 +252,7 @@ function App() {
         gitHub={gitHub}
         instagram={instagram}
         twitter={twitter}
+        whatsapp={whatsapp}
       />
     </>
   );
