@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
 import styles from './module.styles/labelledTextField.module.css'
 const LabelledTextField = (props) => {
     const label = props.label;
