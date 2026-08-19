@@ -1,0 +1,21 @@
+name: Ping Render Health
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # every 10 minutes (UTC)
+  workflow_dispatch: # manual trigger
+
+jobs:
+  ping-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping health endpoint
+        run: |
+          echo "Pinging health endpoint at $(date)"
+          # try up to 3 times with short delays if transient network issues occur
+          status=$(curl --retry 3 --retry-delay 5 -s -o /dev/null -w "%{http_code}" "https://landlord-property-management.onrender.com/health" || echo "000")
+          echo "HTTP status: $status"
+          # don't fail the workflow if the endpoint returns non-200 (keeps it simple); remove the if-block's behavior or `|| true` if you want failures to mark the run failed
+          if [ "$status" != "200" ]; then
+            echo "Non-200 response received from health endpoint"
+          fi
